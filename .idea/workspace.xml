@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="322d2abe-c287-43e8-8f98-bcd8a2756986" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/20170221-011617/events.out.tfevents.1487628977.T-DESKTOP" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/20170221-012030/events.out.tfevents.1487629230.T-DESKTOP" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/20170221-012317/events.out.tfevents.1487629397.T-DESKTOP" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trainset.pckl" afterPath="$PROJECT_DIR$/trainset.pckl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/visual_analysis.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mlwrap.py" afterPath="$PROJECT_DIR$/mlwrap.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ragequit.py" afterPath="$PROJECT_DIR$/ragequit.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/y_test.csv" afterPath="$PROJECT_DIR$/y_test.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/y_train_compare.csv" afterPath="$PROJECT_DIR$/y_train_compare.csv" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,13 +20,25 @@
     <splitter split-orientation="horizontal" split-proportion="0.57409793">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="ragequit.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="ragequit.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/ragequit.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="319">
+                <state relative-caret-position="504">
                   <caret line="106" column="19" lean-forward="false" selection-start-line="106" selection-start-column="19" selection-end-line="106" selection-end-column="19" />
                   <folding>
                     <element signature="e#0#9#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="visual_analysis.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/visual_analysis.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="85">
+                  <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#0#19#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -110,6 +115,7 @@
         <option value="$PROJECT_DIR$/read-write.py" />
         <option value="$PROJECT_DIR$/mlwrap.py" />
         <option value="$PROJECT_DIR$/ragequit.py" />
+        <option value="$PROJECT_DIR$/visual_analysis.py" />
       </list>
     </option>
   </component>
@@ -157,7 +163,7 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/GitHub/PortableGit_f02737a78695063deace08e96d5042710d3e32db/cmd/git.exe" />
   </component>
-  <component name="RunManager" selected="Python.ragequit">
+  <component name="RunManager" selected="Python.visual_analysis">
     <configuration default="false" name="ragequit" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -205,6 +211,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="ragequit" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mlwrap.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="visual_analysis" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ragequit" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/visual_analysis.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -343,16 +366,18 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Python.ragequit" />
       <item index="1" class="java.lang.String" itemvalue="Python.read-write" />
       <item index="2" class="java.lang.String" itemvalue="Python.mlwrap" />
+      <item index="3" class="java.lang.String" itemvalue="Python.visual_analysis" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.ragequit" />
-        <item index="1" class="java.lang.String" itemvalue="Python.mlwrap" />
-        <item index="2" class="java.lang.String" itemvalue="Python.read-write" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python.visual_analysis" />
+        <item index="1" class="java.lang.String" itemvalue="Python.ragequit" />
+        <item index="2" class="java.lang.String" itemvalue="Python.mlwrap" />
+        <item index="3" class="java.lang.String" itemvalue="Python.read-write" />
       </list>
     </recent_temporary>
   </component>
@@ -384,21 +409,28 @@
       <option name="project" value="LOCAL" />
       <updated>1487630443091</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="82% achieved">
+      <created>1487686992111</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1487686992111</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18229716" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18229716" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3109426" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3109426" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -416,7 +448,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Good one: about 80% accuracy&#10;Bad one: output is zeros" />
     <MESSAGE value="Branch feature testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Branch feature testing" />
+    <MESSAGE value="82% achieved" />
+    <option name="LAST_COMMIT_MESSAGE" value="82% achieved" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -595,10 +628,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ragequit.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
+        <state relative-caret-position="504">
           <caret line="106" column="19" lean-forward="false" selection-start-line="106" selection-start-column="19" selection-end-line="106" selection-end-column="19" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/visual_analysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
