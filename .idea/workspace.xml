@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="322d2abe-c287-43e8-8f98-bcd8a2756986" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/visual_analysis.py" />
+    <list default="true" id="322d2abe-c287-43e8-8f98-bcd8a2756986" name="Default" comment="switching to linux">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -416,7 +415,14 @@
       <option name="project" value="LOCAL" />
       <updated>1487686992111</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="switching to linux">
+      <created>1487690013150</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1487690013150</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -449,7 +455,8 @@
     <MESSAGE value="Good one: about 80% accuracy&#10;Bad one: output is zeros" />
     <MESSAGE value="Branch feature testing" />
     <MESSAGE value="82% achieved" />
-    <option name="LAST_COMMIT_MESSAGE" value="82% achieved" />
+    <MESSAGE value="switching to linux" />
+    <option name="LAST_COMMIT_MESSAGE" value="switching to linux" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
