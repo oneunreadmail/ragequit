@@ -1,6 +1,4 @@
 import os
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'  # suppresses warnings from tensorflow
-
 import tensorflow as tf
 import numpy as np
 import random
@@ -16,9 +14,8 @@ for i, x in enumerate(x_train):
 
 for i, x in enumerate(x_test):
     x_test[i] = list(np.array(x) *
-                      [1/100, 1/100, 1/100, 1/500, 1/40, 1, 1/100, 1, 1/30000000, 1/25000, 1/500, 1/10])
+                     [1/100, 1/100, 1/100, 1/500, 1/40, 1, 1/100, 1, 1/30000000, 1/25000, 1/500, 1/10])
 
-#print(x_train[:10])
 x_y_train = []
 for i in range(len(x_train)):
     x_y_train.append((x_train[i], y_train[i]))
@@ -29,16 +26,16 @@ def batch(x_y, size=10):
     return [x_y[0] for x_y in s], [x_y[1] for x_y in s]
 
 
-def weight_variable(shape):
+def weight_variable(shape, name=None):
     """Create a weight variable with appropriate initialization."""
-    initial = tf.truncated_normal(shape, stddev=0.1)
-    return tf.Variable(initial)
+    initial = tf.truncated_normal(shape, mean=0.5, stddev=0.4)
+    return tf.Variable(initial, name=name)
 
 
-def bias_variable(shape):
+def bias_variable(shape, name=None):
     """Create a bias variable with appropriate initialization."""
-    initial = tf.constant(0.1, shape=shape)
-    return tf.Variable(initial)
+    initial = tf.truncated_normal(shape, mean=0, stddev=0.1)
+    return tf.Variable(initial, name=name)
 
 
 def variable_summaries(var):
@@ -54,75 +51,74 @@ def variable_summaries(var):
         tf.summary.histogram('histogram', var)
 
 
-def nn_layer(input_tensor, input_dim, output_dim, layer_name, act=tf.nn.relu):
+def nn_layer(input_tensor, input_dim, output_dim, layer_name, act=tf.sigmoid):
     # Adding a name scope ensures logical grouping of the layers in the graph.
     with tf.name_scope(layer_name):
         # This Variable will hold the state of the weights for the layer
         with tf.name_scope('weights'):
-            weights = weight_variable([input_dim, output_dim])
+            weights = weight_variable([input_dim, output_dim], name="W_" + layer_name)
             variable_summaries(weights)
         with tf.name_scope('biases'):
-            biases = bias_variable([output_dim])
+            biases = bias_variable([output_dim], name="b_" + layer_name)
             variable_summaries(biases)
         with tf.name_scope('Wx_plus_b'):
             preactivate = tf.matmul(input_tensor, weights) + biases
             tf.summary.histogram('pre_activations', preactivate)
-        activations = act(preactivate, name='activation')
-        tf.summary.histogram('activations', activations)
+            activations = act(preactivate, name='activation')
+            tf.summary.histogram('activations', activations)
         return activations
 
-
+# suppress warnings from tf and start our session
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 sess = tf.InteractiveSession()
 
+# add input data and output ground truth data
 x = tf.placeholder(tf.float32, [None, 12], name="x")
-y = tf.placeholder(tf.float32, [None, 1], name="y")
-"""
-with tf.name_scope('layer1'):
-    W1 = tf.Variable(tf.random_normal([12, 128]), name="W1")
-    b1 = tf.Variable(tf.random_normal([128]), name="b1")
-    #r = tf.nn.softmax(tf.matmul(x, W1) + b1)
-    r = tf.nn.softmax(tf.matmul(x, W1) + b1)
+y = tf.placeholder(tf.float32, [None, 2], name="y")
 
-with tf.name_scope('layer2'):
-    W2 = tf.Variable(tf.random_normal([128, 1]), name="W2")
-    b2 = tf.Variable(tf.random_normal([1]), name="b2")
-    m = tf.nn.softmax(tf.matmul(r, W2) + b2)
-"""
-hidden1 = nn_layer(x, 12, 500, 'layer1')
-hidden2 = nn_layer(hidden1, 500, 1, "layer2")
+# build a structure of hidden layers
+hidden1 = nn_layer(x, 12, 10, 'layer1')
+hidden2 = nn_layer(hidden1, 10, 2, 'layer2')
+#hidden3 = nn_layer(tf.nn.softplus(hidden2), 100, 100, 'layer3')
+#hidden4 = nn_layer(tf.nn.softplus(hidden3), 100, 2, "layer4")
 
+# add our model prediction data
 out = hidden2
 
-with tf.name_scope("results"):
+# calculate loss function and define a train step
+loss = tf.losses.mean_squared_error(y, out)
+train_step = tf.train.GradientDescentOptimizer(0.5).minimize(loss)
+
+# add some fancy graphs to tensorboard
+with tf.name_scope("control_room"):
+    tf.summary.scalar('loss', loss)
+    tf.summary.scalar('h1_average', tf.reduce_mean(hidden1))
+    tf.summary.scalar('h2_average', tf.reduce_mean(hidden2))
     variable_summaries(out)
-    variable_summaries(tf.squared_difference(y, out))
-
-cross_entropy = tf.reduce_mean(tf.squared_difference(y, out))
-tf.summary.scalar('cross_entropy', cross_entropy)
-tf.summary.scalar('out_average', tf.reduce_mean(out))
-
-#cross_entropy = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(labels=y, logits=m))
-
-with tf.name_scope('train'):
-    train_step = tf.train.GradientDescentOptimizer(0.05).minimize(cross_entropy)
-
+    #tf.summary.histogram('out', out)
 merged = tf.summary.merge_all()
+
+# initialise log writer for tensorboard
+file_writer = tf.summary.FileWriter('logs/' + datetime.now().strftime("%Y%m%d-%H%M%S") + "/", sess.graph)
+
+# initialize our variables
 tf.global_variables_initializer().run()
-file_writer = tf.summary.FileWriter('logs/'+ datetime.now().strftime("%Y%m%d-%H%M%S") + "/", sess.graph)
 
-for i in range(1000):
-    batch_xs, batch_ys = batch(x_y_train)
-    summary, _ = sess.run([merged, train_step], feed_dict={x: batch_xs, y: batch_ys})
-    file_writer.add_summary(summary, i)
+for i in range(10000):
+    batch_xs, batch_ys = batch(x_y_train, size=1000)
+    sess.run(train_step, feed_dict={x: batch_xs, y: batch_ys})
+    if i % 10 == 0:
+        file_writer.add_summary(sess.run(merged, feed_dict={x: x_train[:100], y: y_train[:100]}), i)
 
-tf.summary.scalar('cross_entropy', cross_entropy)
 
-correct_prediction = tf.cast(tf.equal(tf.round(out), y), tf.float32)
-accuracy = tf.reduce_mean(correct_prediction)
-a, o, cp = sess.run((accuracy, tf.round(out), correct_prediction), feed_dict={x: x_train, y: y_train})
-print(a, "\n", cp[:10])
+correct_prediction = tf.equal(tf.argmax(y, 1), tf.argmax(out, 1))
+accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
+a, o, cp = sess.run((accuracy, tf.argmax(out, 1), correct_prediction), feed_dict={x: x_train, y: y_train})
+print(a, "\n", o[:10])
+np.set_printoptions(suppress=True, precision=3)
+print("Out contains {0:.1f}% of Trues".format(np.sum(o)/len(o)*100))
 
-push_test(sess.run(out, feed_dict={x: x_test}), "y_test.csv")
-push_test(sess.run(out, feed_dict={x: x_train}), "y_train_compare.csv")
+#push_test(sess.run(out, feed_dict={x: x_test}), "y_test.csv")
+#push_test(sess.run(out, feed_dict={x: x_train}), "y_train_compare.csv")
 
 #print(sess.run([W, b]))

@@ -18,7 +18,10 @@ def refresh():
         y_train = []
         for row in spamreader:
             try:
-                y_train.append([float(row[0])])
+                if row[0] == "1":
+                    y_train.append([0.0, 1.0])
+                else:
+                    y_train.append([1.0, 0.0])
             except:
                 pass
 
