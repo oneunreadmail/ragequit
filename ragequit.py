@@ -1,20 +1,25 @@
 import os
 import tensorflow as tf
 import numpy as np
+import pandas as pd
 import random
 from datetime import datetime
 from mlwrap import get_test, get_train, push_test
 
+ITERATIONS = 2000
+BATCH_SIZE = 1000
 
 x_train, y_train = get_train()
 x_test = get_test()
 for i, x in enumerate(x_train):
     x_train[i] = list(np.array(x) *
                       [1/100, 1/100, 1/100, 1/500, 1/40, 1, 1/100, 1, 1/30000000, 1/25000, 1/500, 1/10])
+                      #[1, 1, 1, 1 , 1 , 1, 1, 1, 1. / 3000000, 1. / 250, 1./ 5, 1])
 
 for i, x in enumerate(x_test):
     x_test[i] = list(np.array(x) *
                      [1/100, 1/100, 1/100, 1/500, 1/40, 1, 1/100, 1, 1/30000000, 1/25000, 1/500, 1/10])
+                     #[1, 1, 1, 1, 1, 1, 1, 1, 1. / 3000000, 1. / 250, 1. / 5, 1])
 
 x_y_train = []
 for i in range(len(x_train)):
@@ -28,13 +33,15 @@ def batch(x_y, size=10):
 
 def weight_variable(shape, name=None):
     """Create a weight variable with appropriate initialization."""
-    initial = tf.truncated_normal(shape, mean=0.5, stddev=0.4)
+    #initial = tf.truncated_normal(shape, mean=0., stddev=0.1)
+    initial = tf.random_uniform(shape, minval=-0.5, maxval=0.5)
     return tf.Variable(initial, name=name)
 
 
 def bias_variable(shape, name=None):
     """Create a bias variable with appropriate initialization."""
-    initial = tf.truncated_normal(shape, mean=0, stddev=0.1)
+    # initial = tf.truncated_normal(shape, mean=0., stddev=0.1)
+    initial = tf.random_uniform(shape, minval=-0.5, maxval=0.5)
     return tf.Variable(initial, name=name)
 
 
@@ -70,42 +77,66 @@ def nn_layer(input_tensor, input_dim, output_dim, layer_name, act=tf.sigmoid):
 
 # suppress warnings from tf and start our session
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
-sess = tf.InteractiveSession()
+sess = tf.InteractiveSession(config=tf.ConfigProto(log_device_placement=False))
 
 # add input data and output ground truth data
 x = tf.placeholder(tf.float32, [None, 12], name="x")
 y = tf.placeholder(tf.float32, [None, 2], name="y")
 
+params = ['maxPlayerLevel',
+ 'numberOfAttemptedLevels',
+ 'attemptsOnTheHighestLevel',
+ 'totalNumOfAttempts',
+ 'averageNumOfTurnsPerCompletedLevel',
+ 'doReturnOnLowerLevels',
+ 'numberOfBoostersUsed',
+ 'fractionOfUsefullBoosters',
+ 'totalScore',
+ 'totalBonusScore',
+ 'totalStarsCount',
+ 'numberOfDaysActuallyPlayed']
+
+df = pd.DataFrame(x_train, columns=params)
+df = df[["totalNumOfAttempts",
+                   "fractionOfUsefullBoosters",
+                   "numberOfDaysActuallyPlayed"]]
+x_train = np.array(df)
+print(df)
+print(x_train[:10])
+
 # build a structure of hidden layers
-hidden1 = nn_layer(x, 12, 10, 'layer1')
-hidden2 = nn_layer(hidden1, 10, 2, 'layer2')
-#hidden3 = nn_layer(tf.nn.softplus(hidden2), 100, 100, 'layer3')
+hidden1 = nn_layer(x, 4, 2, 'layer1')
+hidden2 = nn_layer(hidden1, 2, 2, 'layer2')
+#hidden3 = nn_layer(hidden2, 4, 2, 'layer3')
 #hidden4 = nn_layer(tf.nn.softplus(hidden3), 100, 2, "layer4")
 
 # add our model prediction data
 out = hidden2
 
 # calculate loss function and define a train step
-loss = tf.losses.mean_squared_error(y, out)
-train_step = tf.train.GradientDescentOptimizer(0.5).minimize(loss)
+#loss = tf.losses.mean_squared_error(y, out)
+loss = tf.losses.log_loss(out, y, weights=1.0, epsilon=1e-15, scope=None)
+train_step = tf.train.GradientDescentOptimizer(0.1).minimize(loss)
 
 # add some fancy graphs to tensorboard
 with tf.name_scope("control_room"):
     tf.summary.scalar('loss', loss)
-    tf.summary.scalar('h1_average', tf.reduce_mean(hidden1))
-    tf.summary.scalar('h2_average', tf.reduce_mean(hidden2))
+    #tf.summary.scalar('h1_average', tf.reduce_mean(hidden1))
+    #tf.summary.scalar('h2_average', tf.reduce_mean(hidden2))
     variable_summaries(out)
     #tf.summary.histogram('out', out)
 merged = tf.summary.merge_all()
 
 # initialise log writer for tensorboard
-file_writer = tf.summary.FileWriter('logs/' + datetime.now().strftime("%Y%m%d-%H%M%S") + "/", sess.graph)
+file_writer = tf.summary.FileWriter('logs/' + "i=" + str(ITERATIONS) +
+                                    "&bs=" + str(BATCH_SIZE) + "_" +
+                                    datetime.now().strftime("%Y%m%d-%H%M%S") + "/", sess.graph)
 
 # initialize our variables
 tf.global_variables_initializer().run()
 
-for i in range(10000):
-    batch_xs, batch_ys = batch(x_y_train, size=1000)
+for i in range(ITERATIONS):
+    batch_xs, batch_ys = batch(x_y_train, size=BATCH_SIZE)
     sess.run(train_step, feed_dict={x: batch_xs, y: batch_ys})
     if i % 10 == 0:
         file_writer.add_summary(sess.run(merged, feed_dict={x: x_train[:100], y: y_train[:100]}), i)
@@ -118,7 +149,11 @@ print(a, "\n", o[:10])
 np.set_printoptions(suppress=True, precision=3)
 print("Out contains {0:.1f}% of Trues".format(np.sum(o)/len(o)*100))
 
-#push_test(sess.run(out, feed_dict={x: x_test}), "y_test.csv")
+#true_out = [int(x[0] > 0.1) for x in x_test]
+#print(true_out[:10])
+
+#push_test(sess.run(tf.argmax(out, 1), feed_dict={x: x_test}), "y_test.csv")
+#push_test(true_out, "y_test.csv")
 #push_test(sess.run(out, feed_dict={x: x_train}), "y_train_compare.csv")
 
 #print(sess.run([W, b]))
