@@ -157,3 +157,4 @@ print("Out contains {0:.1f}% of Trues".format(np.sum(o)/len(o)*100))
 #push_test(sess.run(out, feed_dict={x: x_train}), "y_train_compare.csv")
 
 #print(sess.run([W, b]))
+

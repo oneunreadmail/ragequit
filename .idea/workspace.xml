@@ -1,13 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="322d2abe-c287-43e8-8f98-bcd8a2756986" name="Default" comment="switching to linux">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fields.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ragequit.iml" afterPath="$PROJECT_DIR$/.idea/ragequit.iml" />
+    <list default="true" id="322d2abe-c287-43e8-8f98-bcd8a2756986" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/20170222-224041/events.out.tfevents.1487792441.blueberry" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/20170222-224107/events.out.tfevents.1487792467.blueberry" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/20170222-224706/events.out.tfevents.1487792826.blueberry" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/20170222-225229/events.out.tfevents.1487793149.blueberry" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/20170222-225729/events.out.tfevents.1487793449.blueberry" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/20170222-231003/events.out.tfevents.1487794203.blueberry" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/20170222-231015/events.out.tfevents.1487794215.blueberry" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/20170222-231157/events.out.tfevents.1487794317.blueberry" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/20170222-232044/events.out.tfevents.1487794844.blueberry" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/20170222-232555/events.out.tfevents.1487795155.blueberry" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/20170222-232631/events.out.tfevents.1487795191.blueberry" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/20170222-232657/events.out.tfevents.1487795217.blueberry" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/20170222-232711/events.out.tfevents.1487795231.blueberry" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/20170222-232717/events.out.tfevents.1487795237.blueberry" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/20170222-232724/events.out.tfevents.1487795244.blueberry" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/20170222-233043/events.out.tfevents.1487795443.blueberry" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-001538/events.out.tfevents.1487798138.blueberry" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-001641/events.out.tfevents.1487798201.blueberry" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-001939/events.out.tfevents.1487798379.blueberry" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-002629/events.out.tfevents.1487798789.blueberry" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-002815/events.out.tfevents.1487798895.blueberry" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-003003/events.out.tfevents.1487799003.blueberry" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-003029/events.out.tfevents.1487799029.blueberry" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-003340/events.out.tfevents.1487799220.blueberry" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-003448/events.out.tfevents.1487799288.blueberry" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-003507/events.out.tfevents.1487799307.blueberry" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-003529/events.out.tfevents.1487799329.blueberry" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-003544/events.out.tfevents.1487799344.blueberry" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-003601/events.out.tfevents.1487799361.blueberry" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-003900/events.out.tfevents.1487799540.blueberry" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-003930/events.out.tfevents.1487799570.blueberry" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-004010/events.out.tfevents.1487799610.blueberry" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-004045/events.out.tfevents.1487799645.blueberry" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-004116/events.out.tfevents.1487799676.blueberry" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-004142/events.out.tfevents.1487799702.blueberry" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-004532/events.out.tfevents.1487799932.blueberry" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-004756/events.out.tfevents.1487800076.blueberry" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-004945/events.out.tfevents.1487800185.blueberry" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-005506/events.out.tfevents.1487800506.blueberry" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-005537/events.out.tfevents.1487800537.blueberry" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-005600/events.out.tfevents.1487800560.blueberry" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-005750/events.out.tfevents.1487800670.blueberry" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-005810/events.out.tfevents.1487800690.blueberry" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=3000_20170222-233359/events.out.tfevents.1487795639.blueberry" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/fun_algo_test-checkpoint.ipynb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/playing_with_algos-checkpoint.ipynb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/playing_with_data-checkpoint.ipynb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/x_test.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/x_train.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/xytte.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/y_train.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fun_algo_test.ipynb" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Untitled-Copy1.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Untitled.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/YOLO_GBT_RULES.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/YOLO_XKGB_RULES.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fields.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mlwrap.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testset.pckl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trainset.pckl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/untitled" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/visual-Copy1.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/visual.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/visual_analysis.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/x_test.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/x_train.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/y_test.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/y_train.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/y_train_compare.csv" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/visual_analysis.py" afterPath="$PROJECT_DIR$/visual_analysis.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ragequit.py" afterPath="$PROJECT_DIR$/ragequit.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,100 +86,20 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.57409793">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="ragequit.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/ragequit.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="90">
-                  <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="9" selection-end-column="19" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="visual_analysis.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/visual_analysis.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="289">
-                  <caret line="39" column="7" lean-forward="true" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="45" />
-                  <folding>
-                    <element signature="e#0#18#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="mlwrap.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/mlwrap.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="487">
-                  <caret line="55" column="4" lean-forward="false" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="51" />
-                  <folding>
-                    <element signature="e#0#10#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="x_test.csv" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/x_test.csv">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="630">
-                  <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="y_train.csv" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/y_train.csv">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="y_train_compare.csv" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/y_train_compare.csv">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="x_train.csv" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/x_train.csv">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="257" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="257" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="fields.txt" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/fields.txt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="36">
-                  <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="25" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ragequit.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ragequit.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2880">
+              <caret line="160" column="0" lean-forward="false" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -124,20 +109,25 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
+    <push-targets>
+      <push-target-info repo="$PROJECT_DIR$" source="timmy" target-remote="origin" target-branch="timmy" />
+    </push-targets>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/read-write.py" />
         <option value="$PROJECT_DIR$/mlwrap.py" />
-        <option value="$PROJECT_DIR$/ragequit.py" />
         <option value="$PROJECT_DIR$/fields.txt" />
+        <option value="$PROJECT_DIR$/ragequit.py" />
+        <option value="$PROJECT_DIR$/snsfix.py" />
         <option value="$PROJECT_DIR$/visual_analysis.py" />
       </list>
     </option>
@@ -164,7 +154,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -179,14 +168,15 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
-    <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/GitHub/PortableGit_f02737a78695063deace08e96d5042710d3e32db/cmd/git.exe" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Python.visual_analysis">
+  <component name="RunManager" selected="Python.snsfix">
     <configuration default="false" name="ragequit" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -251,6 +241,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="ragequit" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/visual_analysis.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="snsfix" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ragequit" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/snsfix.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -389,18 +396,20 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.ragequit" />
       <item index="1" class="java.lang.String" itemvalue="Python.read-write" />
       <item index="2" class="java.lang.String" itemvalue="Python.mlwrap" />
       <item index="3" class="java.lang.String" itemvalue="Python.visual_analysis" />
+      <item index="4" class="java.lang.String" itemvalue="Python.snsfix" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.visual_analysis" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.snsfix" />
         <item index="1" class="java.lang.String" itemvalue="Python.ragequit" />
-        <item index="2" class="java.lang.String" itemvalue="Python.mlwrap" />
-        <item index="3" class="java.lang.String" itemvalue="Python.read-write" />
+        <item index="2" class="java.lang.String" itemvalue="Python.visual_analysis" />
+        <item index="3" class="java.lang.String" itemvalue="Python.mlwrap" />
+        <item index="4" class="java.lang.String" itemvalue="Python.read-write" />
       </list>
     </recent_temporary>
   </component>
@@ -408,7 +417,7 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>$USER_HOME$/.subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -446,21 +455,70 @@
       <option name="project" value="LOCAL" />
       <updated>1487690013150</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="notebook applied">
+      <created>1487718053415</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1487718053415</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Notebook to play with data">
+      <created>1487886963934</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1487886963934</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Notebook to play with data">
+      <created>1487896417021</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1487896417021</updated>
+    </task>
+    <task id="LOCAL-00008" summary="minor update, mostly notebook">
+      <created>1487898336944</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1487898336944</updated>
+    </task>
+    <task id="LOCAL-00009" summary="notebook updated, new columns">
+      <created>1488032075647</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1488032075647</updated>
+    </task>
+    <task id="LOCAL-00010" summary="notebook updated, new columns">
+      <created>1488032128046</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1488032128046</updated>
+    </task>
+    <task id="LOCAL-00011" summary="notebook updated, new columns">
+      <created>1488062240657</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1488062240657</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="43" y="24" width="1877" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18176915" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13376483" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31002086" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32776618" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3152401" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32881" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -480,50 +538,18 @@
     <MESSAGE value="Branch feature testing" />
     <MESSAGE value="82% achieved" />
     <MESSAGE value="switching to linux" />
-    <option name="LAST_COMMIT_MESSAGE" value="switching to linux" />
+    <MESSAGE value="notebook applied" />
+    <MESSAGE value="Notebook to play with data" />
+    <MESSAGE value="minor update, mostly notebook" />
+    <MESSAGE value="notebook updated, new columns" />
+    <option name="LAST_COMMIT_MESSAGE" value="notebook updated, new columns" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ragequit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1908">
-          <caret line="106" column="19" lean-forward="false" selection-start-line="106" selection-start-column="19" selection-end-line="106" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/visual_analysis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mlwrap.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="55" column="4" lean-forward="false" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x_test.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/y_train.csv">
+    <entry file="file://$PROJECT_DIR$/y_train_compare.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -531,6 +557,132 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/fields.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ragequit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="60" column="77" lean-forward="false" selection-start-line="60" selection-start-column="66" selection-end-line="60" selection-end-column="77" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/visual_analysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mlwrap.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="48" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x_test.csv" />
+    <entry file="file://$PROJECT_DIR$/y_train.csv" />
+    <entry file="file://$PROJECT_DIR$/y_train_compare.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x_train.csv" />
+    <entry file="file://$PROJECT_DIR$/fields.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ragequit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="9" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/visual_analysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="39" column="7" lean-forward="true" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mlwrap.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="972">
+          <caret line="55" column="4" lean-forward="false" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x_test.csv" />
+    <entry file="file://$PROJECT_DIR$/y_train.csv" />
+    <entry file="file://$PROJECT_DIR$/y_train_compare.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x_train.csv" />
+    <entry file="file://$PROJECT_DIR$/fields.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ragequit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1908">
+          <caret line="106" column="19" lean-forward="false" selection-start-line="106" selection-start-column="19" selection-end-line="106" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/visual_analysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mlwrap.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="55" column="4" lean-forward="false" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x_test.csv" />
+    <entry file="file://$PROJECT_DIR$/y_train.csv" />
     <entry file="file://$PROJECT_DIR$/y_train_compare.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -543,7 +695,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1734">
           <caret line="102" column="49" lean-forward="false" selection-start-line="102" selection-start-column="49" selection-end-line="102" selection-end-column="49" />
-          <folding />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -558,7 +712,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -566,102 +719,45 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
           <caret line="52" column="50" lean-forward="false" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x_train.csv" />
+    <entry file="file://$PROJECT_DIR$/x_test.csv" />
+    <entry file="file://$PROJECT_DIR$/y_train.csv" />
+    <entry file="file://$PROJECT_DIR$/y_train_compare.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ragequit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/x_train.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x_test.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/y_train.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/y_train_compare.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/x_train.csv" />
     <entry file="file://$PROJECT_DIR$/ragequit.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/x_train.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ragequit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x_train.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/x_train.csv" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/contextlib.py" />
     <entry file="file://$PROJECT_DIR$/answers.csv" />
-    <entry file="file://$PROJECT_DIR$/y_test.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/y_train_compare.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/y_train.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitattributes">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -669,54 +765,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ragequit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="9" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mlwrap.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="55" column="4" lean-forward="false" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x_test.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x_train.csv">
+    <entry file="file://$PROJECT_DIR$/x_train.csv" />
+    <entry file="file://$PROJECT_DIR$/y_train.csv" />
+    <entry file="file://$PROJECT_DIR$/x_test.csv" />
+    <entry file="file://$PROJECT_DIR$/y_test.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="257" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="257" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/y_train_compare.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fields.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="25" />
+        <state relative-caret-position="198">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.5/dist-packages/seaborn/linearmodels.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28368">
+          <caret line="1586" column="16" lean-forward="false" selection-start-line="1586" selection-start-column="16" selection-end-line="1586" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.5/dist-packages/seaborn/axisgrid.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19692">
+          <caret line="1106" column="18" lean-forward="true" selection-start-line="1106" selection-start-column="16" selection-end-line="1107" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/snsfix.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mlwrap.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="48" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/visual_analysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="39" column="7" lean-forward="true" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="45" />
+        <state relative-caret-position="-53">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ragequit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2880">
+          <caret line="160" column="0" lean-forward="false" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
