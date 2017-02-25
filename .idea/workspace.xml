@@ -2,77 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="322d2abe-c287-43e8-8f98-bcd8a2756986" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/20170222-224041/events.out.tfevents.1487792441.blueberry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/20170222-224107/events.out.tfevents.1487792467.blueberry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/20170222-224706/events.out.tfevents.1487792826.blueberry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/20170222-225229/events.out.tfevents.1487793149.blueberry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/20170222-225729/events.out.tfevents.1487793449.blueberry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/20170222-231003/events.out.tfevents.1487794203.blueberry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/20170222-231015/events.out.tfevents.1487794215.blueberry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/20170222-231157/events.out.tfevents.1487794317.blueberry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/20170222-232044/events.out.tfevents.1487794844.blueberry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/20170222-232555/events.out.tfevents.1487795155.blueberry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/20170222-232631/events.out.tfevents.1487795191.blueberry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/20170222-232657/events.out.tfevents.1487795217.blueberry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/20170222-232711/events.out.tfevents.1487795231.blueberry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/20170222-232717/events.out.tfevents.1487795237.blueberry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/20170222-232724/events.out.tfevents.1487795244.blueberry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/20170222-233043/events.out.tfevents.1487795443.blueberry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-001538/events.out.tfevents.1487798138.blueberry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-001641/events.out.tfevents.1487798201.blueberry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-001939/events.out.tfevents.1487798379.blueberry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-002629/events.out.tfevents.1487798789.blueberry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-002815/events.out.tfevents.1487798895.blueberry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-003003/events.out.tfevents.1487799003.blueberry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-003029/events.out.tfevents.1487799029.blueberry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-003340/events.out.tfevents.1487799220.blueberry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-003448/events.out.tfevents.1487799288.blueberry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-003507/events.out.tfevents.1487799307.blueberry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-003529/events.out.tfevents.1487799329.blueberry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-003544/events.out.tfevents.1487799344.blueberry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-003601/events.out.tfevents.1487799361.blueberry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-003900/events.out.tfevents.1487799540.blueberry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-003930/events.out.tfevents.1487799570.blueberry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-004010/events.out.tfevents.1487799610.blueberry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-004045/events.out.tfevents.1487799645.blueberry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-004116/events.out.tfevents.1487799676.blueberry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-004142/events.out.tfevents.1487799702.blueberry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-004532/events.out.tfevents.1487799932.blueberry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-004756/events.out.tfevents.1487800076.blueberry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-004945/events.out.tfevents.1487800185.blueberry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-005506/events.out.tfevents.1487800506.blueberry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-005537/events.out.tfevents.1487800537.blueberry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-005600/events.out.tfevents.1487800560.blueberry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-005750/events.out.tfevents.1487800670.blueberry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=1000_20170223-005810/events.out.tfevents.1487800690.blueberry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/i=2000&amp;bs=3000_20170222-233359/events.out.tfevents.1487795639.blueberry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/fun_algo_test-checkpoint.ipynb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/playing_with_algos-checkpoint.ipynb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/playing_with_data-checkpoint.ipynb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/x_test.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/x_train.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/xytte.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/y_train.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fun_algo_test.ipynb" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Untitled-Copy1.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Untitled.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/YOLO_GBT_RULES.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/YOLO_XKGB_RULES.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fields.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mlwrap.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testset.pckl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/trainset.pckl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/untitled" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/visual-Copy1.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/visual.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/visual_analysis.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/x_test.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/x_train.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/y_test.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/y_train.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/y_train_compare.csv" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ragequit.py" afterPath="$PROJECT_DIR$/ragequit.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -87,14 +17,24 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ragequit.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ragequit.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ragequit.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2880">
-              <caret line="160" column="0" lean-forward="false" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
+            <state relative-caret-position="378">
+              <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="5" lean-forward="false" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -129,14 +69,15 @@
         <option value="$PROJECT_DIR$/ragequit.py" />
         <option value="$PROJECT_DIR$/snsfix.py" />
         <option value="$PROJECT_DIR$/visual_analysis.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="43" />
-    <option name="y" value="24" />
-    <option name="width" value="1877" />
-    <option name="height" value="1056" />
+    <option name="x" value="333" />
+    <option name="y" value="85" />
+    <option name="width" value="1867" />
+    <option name="height" value="998" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -504,21 +445,35 @@
       <option name="project" value="LOCAL" />
       <updated>1488062240657</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="clean stage, migrating to notebooks">
+      <created>1488062617523</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1488062617523</updated>
+    </task>
+    <task id="LOCAL-00013" summary="sorting out mistakes">
+      <created>1488062855615</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1488062855615</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="43" y="24" width="1877" height="1056" extended-state="6" />
+    <frame x="333" y="85" width="1867" height="998" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13376483" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13449024" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32776618" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3152401" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32881" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -542,21 +497,15 @@
     <MESSAGE value="Notebook to play with data" />
     <MESSAGE value="minor update, mostly notebook" />
     <MESSAGE value="notebook updated, new columns" />
-    <option name="LAST_COMMIT_MESSAGE" value="notebook updated, new columns" />
+    <MESSAGE value="clean stage, migrating to notebooks" />
+    <MESSAGE value="sorting out mistakes" />
+    <option name="LAST_COMMIT_MESSAGE" value="sorting out mistakes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/y_train_compare.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fields.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -833,11 +782,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ragequit.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2880">
-          <caret line="160" column="0" lean-forward="false" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
+        <state relative-caret-position="378">
+          <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="5" lean-forward="false" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
