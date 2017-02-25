@@ -19,7 +19,9 @@ for i, x in enumerate(x_train):
 for i, x in enumerate(x_test):
     x_test[i] = list(np.array(x) *
                      [1/100, 1/100, 1/100, 1/500, 1/40, 1, 1/100, 1, 1/30000000, 1/25000, 1/500, 1/10])
+
                      #[1, 1, 1, 1, 1, 1, 1, 1, 1. / 3000000, 1. / 250, 1. / 5, 1])
+
 
 x_y_train = []
 for i in range(len(x_train)):
@@ -33,15 +35,19 @@ def batch(x_y, size=10):
 
 def weight_variable(shape, name=None):
     """Create a weight variable with appropriate initialization."""
+
     #initial = tf.truncated_normal(shape, mean=0., stddev=0.1)
     initial = tf.random_uniform(shape, minval=-0.5, maxval=0.5)
+
     return tf.Variable(initial, name=name)
 
 
 def bias_variable(shape, name=None):
     """Create a bias variable with appropriate initialization."""
+
     # initial = tf.truncated_normal(shape, mean=0., stddev=0.1)
     initial = tf.random_uniform(shape, minval=-0.5, maxval=0.5)
+
     return tf.Variable(initial, name=name)
 
 
@@ -77,11 +83,14 @@ def nn_layer(input_tensor, input_dim, output_dim, layer_name, act=tf.sigmoid):
 
 # suppress warnings from tf and start our session
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+
 sess = tf.InteractiveSession(config=tf.ConfigProto(log_device_placement=False))
+
 
 # add input data and output ground truth data
 x = tf.placeholder(tf.float32, [None, 12], name="x")
 y = tf.placeholder(tf.float32, [None, 2], name="y")
+
 
 params = ['maxPlayerLevel',
  'numberOfAttemptedLevels',
