@@ -1,12 +1,5 @@
-<<<<<<< HEAD
-.ipynb_checkpoints/**
+.idea
 .idea/**
-.idea/
 __pycache__
-*.xml
-.idea/workspace.xml
-=======
-__pycache__
-/.idea
-/.idea/workspace.xml
->>>>>>> master
+.ipynb_checkpoints
+.gitattributes
