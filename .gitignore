@@ -1,5 +1,7 @@
-.idea
+.idea/
 .idea/**
 __pycache__
-.ipynb_checkpoints
+.ipynb_checkpoints/
 .gitattributes
+data/y_test.csv
+logs/
