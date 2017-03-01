@@ -20,17 +20,17 @@ class nnetwork():
         self.y = tf.placeholder(tf.float32, [None, 2], name="y")
 
         # build a structure of hidden layers
-        self.hidden1 = self.nn_layer(self.x, anus_size, 2, 'layer1')
-        self.hidden2 = self.nn_layer(self.hidden1, 2, 2, 'layer2')
-        # hidden3 = nn_layer(hidden2, 4, 2, 'layer3')
-        # hidden4 = nn_layer(tf.nn.softplus(hidden3), 100, 2, "layer4")
+        self.hidden1 = self.nn_layer(self.x, anus_size, 24, 'layer1', act=None)
+        self.hidden2 = self.nn_layer(self.hidden1, 24, 124, 'layer2')
+        self.hidden3 = self.nn_layer(self.hidden2, 124, 2, 'layer3')
+        #self.hidden4 = self.nn_layer(self.hidden3, 24, 2, 'layer3')
 
         # add our model prediction data
-        self.out = self.hidden2
+        self.out = self.hidden3
 
         # calculate loss function and define a train step
-        self.loss = tf.losses.log_loss(self.out, self.y, weights=1.0, epsilon=1e-15, scope=None)
-        self.train_step = tf.train.GradientDescentOptimizer(0.1).minimize(self.loss)
+        self.loss = tf.losses.log_loss(self.y, self.out, weights=1.0, epsilon=1e-15, scope=None)
+        self.train_step = tf.train.GradientDescentOptimizer(0.01).minimize(self.loss)
 
         # add some fancy graphs to tensorboard
         with tf.name_scope("control_room"):
@@ -62,10 +62,12 @@ class nnetwork():
                                                            feed_dict={self.x: batch_xs, self.y: batch_ys}), i)
 
     def predict(self, x):
-        return np.around(self.sess.run(self.out, feed_dict={self.x: x}))
+        return [(_[0] > _[1])*1.0 for _ in np.around(self.sess.run(self.out, feed_dict={self.x: x}))]
 
     def predict_proba(self, x):
-        return self.sess.run(self.out, feed_dict={self.x: x})
+        predictions_in_2_columns = self.sess.run(self.out, feed_dict={self.x: x})
+        predictions_in_1_column = predictions_in_2_columns[:, 0]
+        return [max(min(p, 1 - 1e-15), 1e-15) for p in predictions_in_1_column]
 
     def get_batch(self, x, y, size=100, number=None, rand=False):
         assert (x.shape[0] == y.shape[0]), "x shape " + str(x.shape[0]) + " != y.shape " + str(y.shape[0])
@@ -104,8 +106,7 @@ class nnetwork():
 
     def nn_layer(self, input_tensor, input_dim, output_dim, layer_name, act=tf.sigmoid):
         # Adding a name scope ensures logical grouping of the layers in the graph.
-        if not act:
-            act = lambda x: x
+
         with tf.name_scope(layer_name):
             # This Variable will hold the state of the weights for the layer
             with tf.name_scope('weights'):
@@ -117,41 +118,55 @@ class nnetwork():
             with tf.name_scope('Wx_plus_b'):
                 preactivate = tf.matmul(input_tensor, weights) + biases
                 #tf.summary.histogram('pre_activations', preactivate)
-                activations = act(preactivate, name='activation')
+                if act:
+                    activations = act(preactivate, name='activation')
+                else:
+                    activations = tf.add(preactivate, 0., name="activation")
                 #tf.summary.histogram('activations', activations)
             return activations
 
-xytte = pd.read_csv("data/xytte.csv")
-xytte = xytte[[
-    'maxPlayerLevel',
-    'numberOfAttemptedLevels',
-    'attemptsOnTheHighestLevel',
-    'totalNumOfAttempts',
-    #'averageNumOfTurnsPerCompletedLevel',
-    'doReturnOnLowerLevels',
-    'numberOfBoostersUsed',
-    'fractionOfUsefullBoosters',
-    'totalScore',
-    'totalBonusScore',
-    'totalStarsCount',
-    'numberOfDaysActuallyPlayed',
-    'returned']]
-x_train = xytte[xytte.returned == xytte.returned].reset_index(drop=True).drop("returned", axis=1)
-y_train = xytte[xytte.returned == xytte.returned].reset_index(drop=True)[["returned"]]
-x_test  = xytte[xytte.returned != xytte.returned].reset_index(drop=True).drop("returned", axis=1)
-y_train["gone"] = 1 - y_train.returned
+if __name__ == "__main__":
 
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score, log_loss
-x1, x2, y1, y2 = train_test_split(x_train, y_train, test_size=0.3, random_state=42)
+    xytte = pd.read_csv("data/xytte.csv")
+    xytte = xytte[[
+        'maxPlayerLevel_norm',
+        'numberOfAttemptedLevels_norm',
+        'attemptsOnTheHighestLevel_norm',
+        'totalNumOfAttempts_norm',
+        'averageNumOfTurnsPerCompletedLevel_norm',
+        'doReturnOnLowerLevels',
+        'numberOfBoostersUsed_norm',
+        'fractionOfUsefullBoosters_norm',
+        'totalScore_norm',
+        'totalBonusScore_norm',
+        'totalStarsCount_norm',
+        'numberOfDaysActuallyPlayed_norm',
+        'returned']]
+    x_train = xytte[xytte.returned == xytte.returned].reset_index(drop=True).drop("returned", axis=1)
+    y_train = xytte[xytte.returned == xytte.returned].reset_index(drop=True)[["returned"]]
+    x_test  = xytte[xytte.returned != xytte.returned].reset_index(drop=True).drop("returned", axis=1)
+    y_train["gone"] = 1 - y_train.returned
 
-nn = nnetwork()
-#print(x_train)
-nn.fit(x1, y1)
+    from sklearn.model_selection import train_test_split
+    from sklearn.metrics import accuracy_score, log_loss
+    x1, x2, y1, y2 = train_test_split(x_train, y_train, test_size=0.3, random_state=42)
 
-#print(a.shape)
-#print(b.shape)
-print("PREDICTIONZ")
-print(nn.predict_proba(x2)[:10])
-print("log loss: ", log_loss(y2, nn.predict_proba(x2)))
-#print(nn.predict_proba(a))
+
+
+    nn = nnetwork()
+    #print(x_train)
+    nn.fit(x1, y1)
+
+    #print(a.shape)
+    #print(b.shape)
+    print("PREDICTIONZ")
+    pr = nn.predict(x2)
+    pp = nn.predict_proba(x2)
+    yy = list(y2.returned)
+    print("REAL:     ", yy[:15])
+    print("NOT REAL: ", pr[:15])
+    print("PROBS:    ", list(pp)[:15])
+    print("log loss: ", log_loss(yy, pp))
+    print("accuracy: ", np.mean(np.equal(yy, pr)))
+
+    #print(nn.predict_proba(a))
