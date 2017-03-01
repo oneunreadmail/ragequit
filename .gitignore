@@ -3,3 +3,4 @@
 .gitattributes
 data/y_test.csv
 logs/
+__pycache__/
