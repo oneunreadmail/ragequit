@@ -50,7 +50,11 @@ class nnetwork():
 
     def fit(self, x, y, *args, **kwargs):
         x = np.array(x, ndmin=2)
-        y = np.array(y, ndmin=2)
+        if type(y) is list:
+            y = np.vstack(y)
+        else:
+            raise ValueError("tf.nnetwork.fit needs fucking list, u know")
+        y = np.append(y, 1 - np.array(y, ndmin=2), axis=1)
         self.prepare_ur_anus(x.shape[1])
         tf.global_variables_initializer().run()
 
@@ -58,8 +62,10 @@ class nnetwork():
             batch_xs, batch_ys = self.get_batch(x, y, size=self.BATCH_SIZE, rand=True)
             self.sess.run(self.train_step, feed_dict={self.x: batch_xs, self.y: batch_ys})
             if i % 10 == 0:
-                self.file_writer.add_summary(self.sess.run(self.merged,
-                                                           feed_dict={self.x: batch_xs, self.y: batch_ys}), i)
+                #self.file_writer.add_summary(self.sess.run(self.merged,
+                                                           #feed_dict={self.x: batch_xs, self.y: batch_ys}
+                #                                           ), i)
+                pass
 
     def predict(self, x):
         return [(_[0] > _[1])*1.0 for _ in np.around(self.sess.run(self.out, feed_dict={self.x: x}))]
@@ -67,10 +73,13 @@ class nnetwork():
     def predict_proba(self, x):
         predictions_in_2_columns = self.sess.run(self.out, feed_dict={self.x: x})
         predictions_in_1_column = predictions_in_2_columns[:, 0]
-        return [max(min(p, 1 - 1e-15), 1e-15) for p in predictions_in_1_column]
+        predictions_in_1_column_with_some_boundaries = [max(min(p, 1 - 1e-15), 1e-15) for p in predictions_in_1_column]
+
+        return predictions_in_2_columns[:, [1, 0]]  # поменяем первый и второй столбцы, а то логлосс сходит с ума
+
 
     def get_batch(self, x, y, size=100, number=None, rand=False):
-        assert (x.shape[0] == y.shape[0]), "x shape " + str(x.shape[0]) + " != y.shape " + str(y.shape[0])
+        assert (x.shape[0] == y.shape[0]), "x shape " + str(x.shape) + " != y.shape " + str(y.shape)
         if random:
             sample = random.sample(range(x.shape[0]), size)
             return x[sample], y[sample]
@@ -145,7 +154,8 @@ if __name__ == "__main__":
     x_train = xytte[xytte.returned == xytte.returned].reset_index(drop=True).drop("returned", axis=1)
     y_train = xytte[xytte.returned == xytte.returned].reset_index(drop=True)[["returned"]]
     x_test  = xytte[xytte.returned != xytte.returned].reset_index(drop=True).drop("returned", axis=1)
-    y_train["gone"] = 1 - y_train.returned
+    #y_train["gone"] = 1 - y_train.returned
+    y_train = list(y_train.returned)
 
     from sklearn.model_selection import train_test_split
     from sklearn.metrics import accuracy_score, log_loss
@@ -162,11 +172,11 @@ if __name__ == "__main__":
     print("PREDICTIONZ")
     pr = nn.predict(x2)
     pp = nn.predict_proba(x2)
-    yy = list(y2.returned)
+    yy = y2
     print("REAL:     ", yy[:15])
     print("NOT REAL: ", pr[:15])
-    print("PROBS:    ", list(pp)[:15])
-    print("log loss: ", log_loss(yy, pp))
+    print("PROBS:    ", pp[:15, 0])
+    print("log loss: ", log_loss(yy, pp[:, 0]))
     print("accuracy: ", np.mean(np.equal(yy, pr)))
 
     #print(nn.predict_proba(a))
